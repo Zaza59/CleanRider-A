@@ -1,0 +1,26 @@
+{
+  "name": "cleanrider-a-public",
+  "version": "1.0.0",
+  "description": "CleanRider-A project workspace (Express + Neon Postgres)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --env-file-if-exists=.env --watch server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "cleanrider",
+    "robotics",
+    "team",
+    "workspace"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.22.3",
+    "pg": "^8.13.1"
+  }
+}

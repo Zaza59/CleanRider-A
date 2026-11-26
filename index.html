@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>CleanRider-A — مساحة عمل المشروع</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== App shell ===== -->
+  <div id="app" class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <div class="brand-mark small">
+          <span class="mark-dot"></span>
+          CleanRider<span class="accent">-A</span>
+        </div>
+        <button id="sidebar-close" class="icon-btn sidebar-close" aria-label="إغلاق القائمة">✕</button>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot">
+        <div class="user-chip">
+          <div class="avatar">CR</div>
+          <div class="user-meta">
+            <span>فريق التطوير</span>
+            <span class="muted small">نسخة عامة — بدون تسجيل دخول</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-scrim" id="sidebar-scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="menu-btn" class="icon-btn menu-btn" aria-label="فتح القائمة">☰</button>
+        <div class="topbar-title">
+          <h2 id="page-title">لوحة المتابعة</h2>
+          <span id="page-sub" class="muted small"></span>
+        </div>
+        <div class="topbar-actions">
+          <span class="pill pill-live" id="saved-indicator">محفوظ</span>
+        </div>
+      </header>
+      <div id="view" class="view" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
